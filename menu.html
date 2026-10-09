@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sebby's Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/sebbys-logo.jpg" alt="Sebby's Cafe Logo">
+        </a>
+
+        <div class="logo-text">
+          <strong>Sebby's</strong>
+          <span>C A F E</span>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+        <nav id="navMenu">
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="menu.html" class="active">Menu</a>
+          <a href="index.html#promotion">Promotion</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- MENU -->
+      <section class="featured section">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">OUR MENU</p>
+            <h2>Drinks and treats, <span>made with care.</span></h2>
+          </div>
+        </div>
+
+        <div class="menu-tabs" role="group" aria-label="Filter the menu">
+          <button type="button" class="btn primary-btn menu-tab" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="btn secondary-btn menu-tab" data-filter="coffee" aria-pressed="false">Coffee</button>
+          <button type="button" class="btn secondary-btn menu-tab" data-filter="noncoffee" aria-pressed="false">Non-Coffee</button>
+          <button type="button" class="btn secondary-btn menu-tab" data-filter="ube" aria-pressed="false">Ube Series</button>
+          <button type="button" class="btn secondary-btn menu-tab" data-filter="pastry" aria-pressed="false">Pastry</button>
+          <button type="button" class="btn secondary-btn menu-tab" data-filter="christmas" aria-pressed="false">Christmas</button>
+        </div>
+
+        <p class="menu-count" id="menuCount" aria-live="polite"></p>
+
+        <div class="product-grid" id="menuGrid">
+          <article class="product-card" data-category="coffee">
+            <div class="product-image">
+              <img src="assets/sebbys-coffee.jpg" alt="Spanish Latte">
+            </div>
+            <div class="product-content">
+              <span class="product-category">COFFEE</span>
+              <h3>Spanish Latte</h3>
+              <div class="product-bottom">
+                <strong>₱130</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="coffee">
+            <div class="product-image">
+              <img src="assets/sebbys-caramelfrappuccino.jpg" alt="Caramel Frappuccino">
+            </div>
+            <div class="product-content">
+              <span class="product-category">COFFEE</span>
+              <h3>Caramel Frappuccino</h3>
+              <div class="product-bottom">
+                <strong>₱160</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="coffee">
+            <div class="product-image">
+              <img src="assets/sebbys-caramelmacchiato.jpg" alt="Caramel Macchiato">
+            </div>
+            <div class="product-content">
+              <span class="product-category">COFFEE</span>
+              <h3>Caramel Macchiato</h3>
+              <div class="product-bottom">
+                <strong>₱160</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="coffee">
+            <div class="product-image">
+              <img src="assets/sebbys-coffeejelly.jpg" alt="Coffee Jelly">
+            </div>
+            <div class="product-content">
+              <span class="product-category">COFFEE</span>
+              <h3>Coffee Jelly</h3>
+              <div class="product-bottom">
+                <strong>₱160</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="noncoffee">
+            <div class="product-image">
+              <img src="assets/sebbys-strawberriesandcream.jpg" alt="Strawberries &amp; Cream">
+            </div>
+            <div class="product-content">
+              <span class="product-category">NON-COFFEE</span>
+              <h3>Strawberries &amp; Cream</h3>
+              <div class="product-bottom">
+                <strong>₱145</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="noncoffee">
+            <div class="product-image">
+              <img src="assets/sebbys-matchacreme.jpg" alt="Matcha Creme">
+            </div>
+            <div class="product-content">
+              <span class="product-category">NON-COFFEE</span>
+              <h3>Matcha Creme</h3>
+              <div class="product-bottom">
+                <strong>₱150</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="noncoffee">
+            <div class="product-image">
+              <img src="assets/sebbys-icedbiscofflatte.jpg" alt="Iced Biscoff Latte">
+            </div>
+            <div class="product-content">
+              <span class="product-category">NON-COFFEE</span>
+              <h3>Iced Biscoff Latte</h3>
+              <div class="product-bottom">
+                <strong>₱165</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="noncoffee">
+            <div class="product-image">
+              <img src="assets/sebbys-galaxylemonberry.jpg" alt="Galaxy Lemon Berry">
+            </div>
+            <div class="product-content">
+              <span class="product-category">NON-COFFEE</span>
+              <h3>Galaxy Lemon Berry</h3>
+              <div class="product-bottom">
+                <strong>₱110</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ube">
+            <div class="product-image">
+              <img src="assets/sebbys-ubemilk.jpg" alt="Iced Ube Milk">
+            </div>
+            <div class="product-content">
+              <span class="product-category">UBE SERIES</span>
+              <h3>Iced Ube Milk</h3>
+              <div class="product-bottom">
+                <strong>₱145</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="ube">
+            <div class="product-image">
+              <img src="assets/sebbys-ubefrappe.jpg" alt="Ube Frappe">
+            </div>
+            <div class="product-content">
+              <span class="product-category">UBE SERIES</span>
+              <h3>Ube Frappe</h3>
+              <div class="product-bottom">
+                <strong>₱155</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="pastry">
+            <div class="product-image">
+              <img src="assets/sebbys-food.jpg" alt="Ensaymada">
+            </div>
+            <div class="product-content">
+              <span class="product-category">PASTRY</span>
+              <h3>Ensaymada</h3>
+              <div class="product-bottom">
+                <strong>₱150</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="pastry">
+            <div class="product-image">
+              <img src="assets/sebbys-blueberrycheesecake.jpg" alt="Blueberry Cheesecake">
+            </div>
+            <div class="product-content">
+              <span class="product-category">PASTRY</span>
+              <h3>Blueberry Cheesecake</h3>
+              <div class="product-bottom">
+                <strong>₱120</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="pastry">
+            <div class="product-image">
+              <img src="assets/sebbys-biscoffcookie.jpg" alt="Biscoff Cookie">
+            </div>
+            <div class="product-content">
+              <span class="product-category">PASTRY</span>
+              <h3>Biscoff Cookie</h3>
+              <div class="product-bottom">
+                <strong>₱95</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="pastry">
+            <div class="product-image">
+              <img src="assets/sebbys-dubaichewycookie.jpg" alt="Dubai Chewy Cookie">
+            </div>
+            <div class="product-content">
+              <span class="product-category">PASTRY</span>
+              <h3>Dubai Chewy Cookie</h3>
+              <div class="product-bottom">
+                <strong>₱65</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img src="assets/sebbys-christmasdrinks.jpg" alt="Holiday Latte">
+            </div>
+            <div class="product-content">
+              <span class="product-category">CHRISTMAS SPECIAL · LIMITED</span>
+              <h3>Holiday Latte</h3>
+              <div class="product-bottom">
+                <strong>₱165</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="christmas">
+            <div class="product-image">
+              <img src="assets/sebbys-peppermintdarkmochafrappe.jpg" alt="Peppermint Dark Mocha Frappe">
+            </div>
+            <div class="product-content">
+              <span class="product-category">CHRISTMAS SPECIAL · LIMITED</span>
+              <h3>Peppermint Dark Mocha Frappe</h3>
+              <div class="product-bottom">
+                <strong>₱170</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="featured-note">
+          <span>✨</span>
+          <p>
+            Prices may change. Ask our baristas about today's specials.
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT PREVIEW -->
+      <section class="contact-preview section" id="contact">
+        <div class="contact-box">
+          <div class="contact-text">
+            <p class="section-label">COME SAY HELLO</p>
+            <h2>Your next coffee<br> break is waiting.</h2>
+            <p>
+              Stop by Sebby's Cafe and enjoy a warm drink, a sweet treat, and a cozy atmosphere.
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span>📍</span>
+              <div>
+                <strong>Visit Us</strong>
+                <p>San Nicolas, Minalin Pampanga</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>🕐</span>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>10:00 AM - 10:00 PM</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span>✉</span>
+              <div>
+                <strong>Email Us</strong>
+                <p>sebbyscafe@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/sebbys-logo.jpg" alt="Sebby's Cafe Logo">
+          </a>
+
+          <div class="logo-text">
+            <strong>Sebby's</strong>
+            <span>C A F E</span>
+          </div>
+
+          <p>Life happens, coffee helps.</p>
+
+          <div class="socials">
+            <a href="https://www.facebook.com/profile.php?id=61558022451061" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/sebbyscafe/" aria-label="Instagram">◎</a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="index.html#promotion">Promotion</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+
+        <div class="newsletter">
+          <h3>Stay in the loop ☕</h3>
+          <p>Get updates about new drinks, promotions, and special offers.</p>
+
+          <form id="newsletterForm">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sebby's Cafe. All rights reserved.</p>
+        <p>Made by sebby's cafe team.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
